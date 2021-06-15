@@ -40,13 +40,13 @@ Ex
 Formato JSON:
 ```json
 {
-    "timestamp": "", #timestamp de consulta
+    "timestamp": "",  // timestamp de consulta
     "data": [
         {
-            "symbol": "BTC/USD",    # ticker
-            "spread": 15.00,        # spread
-            "buyOn": "binance",     # onde compra mais barato
-            "timestamp": ""         # timestamp da oportunidade de arbitragem
+            "symbol": "BTC/USD",    // ticker
+            "spread": 15.00,        // spread
+            "buyOn": "binance",     // onde compra mais barato
+            "timestamp": ""         // timestamp da oportunidade de arbitragem
         },
         (...)
     ]
@@ -61,10 +61,10 @@ A segunda parte é um endpoint, com suporte a websocket, que possui as seguintes
 Formato JSON:
 ```json
 {
-    "symbol": "BTC/USD",    # ticker
-    "spread": 15.00,        # spread
-    "buyOn": "binance",     # onde compra mais barato
-    "timestamp": ""         # timestamp da oportunidade de arbitragem
+    "symbol": "BTC/USD",    // ticker
+    "spread": 15.00,        // spread
+    "buyOn": "binance",     // onde compra mais barato
+    "timestamp": ""         // timestamp da oportunidade de arbitragem
 }
 ```
 
@@ -92,5 +92,5 @@ Formato JSON:
 Quaisquer dúvidas que você venha a ter, consulte as _issues_ para ver se alguém já não a fez e caso você não ache sua resposta, abra você mesmo uma nova issue!
 
 ## Referências
-API de consulta de preços Binance (websocket)
-API de consulta de preços Deribit (websocket)
+* [API de consulta de preços Binance (websocket)](https://binance-docs.github.io/apidocs/spot/en/#individual-symbol-book-ticker-streams)
+* [API de consulta de preços Deribit (websocket)](https://docs.deribit.com/#public-get_order_book) 
