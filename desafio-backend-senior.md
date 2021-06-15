@@ -1,8 +1,6 @@
-# Desafio QR Capital
+# Desafio Backend Sênior
 
 Olá pessoa desenvolvedora, tudo bem?
-
-Estavamos felizes por chegar até aqui!!!
 
 Nosso desafio será tanto uma avaliação técnica, quanto a sua capacidade de entender um domínio de problema.
 
