@@ -32,8 +32,6 @@ A primeira parte é construir uma API (REST), que possui os seguintes endpoints:
 
 - *Adicionar o valor do Spread para o alerta*: Esse valor determina o valor mínimo de spread para ser enviado no canal de WebSocket.
 - *Histórico das oportunidades*: Registra toda oportunidade de arbitragem acima de 2% do valor mais barato. 
-Ex  
-
 
 Formato JSON:
 ```json
