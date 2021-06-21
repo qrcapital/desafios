@@ -1,8 +1,6 @@
-# Desafio QR Capital
+# Desafio Backend Sênior
 
 Olá pessoa desenvolvedora, tudo bem?
-
-Estavamos felizes por chegar até aqui!!!
 
 Nosso desafio será tanto uma avaliação técnica, quanto a sua capacidade de entender um domínio de problema.
 
@@ -33,20 +31,18 @@ Vamos dividir o sistema em duas partes:
 A primeira parte é construir uma API (REST), que possui os seguintes endpoints:
 
 - *Adicionar o valor do Spread para o alerta*: Esse valor determina o valor mínimo de spread para ser enviado no canal de WebSocket.
-- *Histórico das oportunidades*: Registra toda oportunidade de arbitragem acima de 2% do valor mais barato. 
-Ex  
-
+- *Histórico das oportunidades*: Retorna o histórico de todas de oportunidades de compra, de acordo com o spread determinado. Caso o spread não foi adicionado pelo usuário, o padrão é 2%. 
 
 Formato JSON:
 ```json
 {
-    "timestamp": "", #timestamp de consulta
+    "timestamp": "",  // timestamp de consulta
     "data": [
         {
-            "symbol": "BTC/USD",    # ticker
-            "spread": 15.00,        # spread
-            "buyOn": "binance",     # onde compra mais barato
-            "timestamp": ""         # timestamp da oportunidade de arbitragem
+            "symbol": "BTC/USD",    // ticker
+            "spread": 15.00,        // spread
+            "buyOn": "binance",     // onde compra mais barato
+            "timestamp": ""         // timestamp da oportunidade de arbitragem
         },
         (...)
     ]
@@ -61,10 +57,10 @@ A segunda parte é um endpoint, com suporte a websocket, que possui as seguintes
 Formato JSON:
 ```json
 {
-    "symbol": "BTC/USD",    # ticker
-    "spread": 15.00,        # spread
-    "buyOn": "binance",     # onde compra mais barato
-    "timestamp": ""         # timestamp da oportunidade de arbitragem
+    "symbol": "BTC/USD",    // ticker
+    "spread": 15.00,        // spread
+    "buyOn": "binance",     // onde compra mais barato
+    "timestamp": ""         // timestamp da oportunidade de arbitragem
 }
 ```
 
@@ -91,6 +87,8 @@ Formato JSON:
 
 Quaisquer dúvidas que você venha a ter, consulte as _issues_ para ver se alguém já não a fez e caso você não ache sua resposta, abra você mesmo uma nova issue!
 
+Ou se preferir, encaminhe um email para <showmecode@qr.capital>, colocando seu nome e desafio no assunto do email.
+
 ## Referências
-API de consulta de preços Binance (websocket)
-API de consulta de preços Deribit (websocket)
+* [API de consulta de preços Binance (websocket)](https://binance-docs.github.io/apidocs/spot/en/#individual-symbol-book-ticker-streams)
+* [API de consulta de preços Deribit (websocket)](https://docs.deribit.com/#public-get_order_book) 
