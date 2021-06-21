@@ -1,4 +1,4 @@
-# Desafio Frontend Júnior
+# Desafio Frontend Pleno
 
 Olá pessoa desenvolvedora, tudo bem?
 
