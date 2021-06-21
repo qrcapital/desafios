@@ -47,7 +47,7 @@ Retorno
 
 **Sobre o algoritmo**
 
-O algoritmo VADER é ummodelo usado para analise de sentimentos em textos, analisando polaridade (postivo/negativo) e intensidade de emoção. Nosso projeto focará apenas na polaridade (Veja em referências).
+O algoritmo VADER é um modelo usado para análise de sentimentos de textos, analisando polaridade (postivo/negativo) e intensidade de emoção. Nosso projeto focará apenas na polaridade (Veja em referências).
 
 ## Requisitos
 
@@ -59,6 +59,8 @@ O algoritmo VADER é ummodelo usado para analise de sentimentos em textos, anali
 ## Dúvidas
 
 Quaisquer dúvidas que você venha a ter, consulte as _issues_ para ver se alguém já não a fez e caso você não ache sua resposta, abra você mesmo uma nova issue!
+
+Ou se preferir, encaminhe um email para <showmecode@qr.capital>, colocando seu nome e desafio no assunto do email.
 
 ## Referências
 * [Bliblioteca VADER para Python](https://github.com/cjhutto/vaderSentiment)

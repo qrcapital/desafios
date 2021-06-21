@@ -87,6 +87,8 @@ Formato JSON:
 
 Quaisquer dúvidas que você venha a ter, consulte as _issues_ para ver se alguém já não a fez e caso você não ache sua resposta, abra você mesmo uma nova issue!
 
+Ou se preferir, encaminhe um email para <showmecode@qr.capital>, colocando seu nome e desafio no assunto do email.
+
 ## Referências
 * [API de consulta de preços Binance (websocket)](https://binance-docs.github.io/apidocs/spot/en/#individual-symbol-book-ticker-streams)
 * [API de consulta de preços Deribit (websocket)](https://docs.deribit.com/#public-get_order_book) 

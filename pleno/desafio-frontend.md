@@ -44,5 +44,7 @@ O desafio consiste em implementar a solução discutida acima utlizando a API da
 
 Quaisquer dúvidas que você venha a ter, consulte as _issues_ para ver se alguém já não a fez e caso você não ache sua resposta, abra você mesmo uma nova issue!
 
+Ou se preferir, encaminhe um email para <showmecode@qr.capital>, colocando seu nome e desafio no assunto do email.
+
 ## Referências
 * [CryptoCompare API](https://min-api.cryptocompare.com/)
