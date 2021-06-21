@@ -6,7 +6,9 @@ Nosso desafio será tanto uma avaliação técnica, quanto a sua capacidade de e
 
 ## Domínio do problema
 
-O objetivo é criar uma API que analisa opniões de tweets sobre Bitcoin. A API permitirá cadastrar usuário do twitter e o tweet e posteriormente processar a opnião geral do usuário é positiva ou negativa.
+O objetivo é criar uma API que analisa opniões sobre o Bitcoin. 
+
+A API permitirá cadastrar textos de usuários do twitter e verificar se as opniões são positivas ou negativas. 
 
 ## Desafio
 
@@ -14,7 +16,7 @@ Vamos dividir o sistema em duas partes:
 
 A primeira parte é construir uma API (REST), que possui os seguintes endpoints:
 
-- **Adicionar tweet para análise**: Através de um POST, esse endpoint cadastra o usuário deve cadastrar autor, texto e link do tweet para ser processado. Ex:
+- **Adicionar tweet para análise**: Através de um POST, esse endpoint cadastra o autor, texto e link do tweet. Ex:
 
 Formato JSON:
 ```json
@@ -25,7 +27,7 @@ Formato JSON:
 }
 ```
 
-A verificação do texto deve ocorrer antes do cadastro.
+Antes do cadastro, o texto deverá ser analisado (detalhes na seção 'Sobre o algoritmo')
 
 - **Opnião do autor**: Através de um GET, retorna a média das opniões do autor, e o resumo (se é positiva ou negativa). A forma de pesquisa é pelo author, direto na URL, Ex: 
 
@@ -45,9 +47,11 @@ Retorno
 }
 ```
 
-**Sobre o algoritmo**
+**Análise de Opniões**
 
-O algoritmo VADER é um modelo usado para análise de sentimentos de textos, analisando polaridade (postivo/negativo) e intensidade de emoção. Nosso projeto focará apenas na polaridade (Veja em referências).
+Para analisar o texto, usaremos o modelo VADER.  
+
+Vader é um modelo usado para análise de sentimentos de textos, analisando polaridade (postivo/negativo) e intensidade de emoção. Nosso projeto focará apenas na polaridade (Veja em referências). Não se preocupe em implementar o modelo, dado que adicionamos nas referências, bibliotecas prontas. 
 
 ## Requisitos
 
