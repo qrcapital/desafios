@@ -24,13 +24,12 @@ O desafio consiste em implementar a solução discutida acima utlizando a API da
 ## Requisitos
 
 - Utilizar RubyOnRails ou NodeJS/React.
-- Utilizar BulmaCSS ou TailwindCSS.
 - Ter testes automatizados.
 - README explicando como executar seu projeto.
 
 ## Opcional, mas seria muito bom
 - Utilizar Docker para montar o ambiente.
-
+- Utilizar BulmaCSS ou TailwindCSS.
 
 ## Critério de avaliação
 
