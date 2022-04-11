@@ -1,4 +1,4 @@
-# Desafio Frontend Pleno
+# Desafio Developer
 
 Olá pessoa desenvolvedora, tudo bem?
 
@@ -6,7 +6,7 @@ Nosso desafio será tanto uma avaliação técnica, quanto a sua capacidade de e
 
 ## Domínio do problema
 
-Gostariamos que fosse criado uma dashboard de pesquisa de criptomoedas, onde é possível pesquisar, selecionar quais moedas o usuário deseja acompanhar a cotação do preço.
+Criar uma área logada com dashboard de pesquisa de criptomoedas, onde é possível pesquisar, selecionar quais moedas o usuário deseja acompanhar a cotação do preço.
 
 **Buscador:** O componente de busca funciona no modelo _autocomplete_, ou seja, quando o usuário escreve os possíveis resultados começam a surgir. Além disso, uma vez que o usuário clica em um item do _autocomplete_, a moeda pesquisada é adicionada no _dashboard_.
 
@@ -23,12 +23,13 @@ O desafio consiste em implementar a solução discutida acima utlizando a API da
 
 ## Requisitos
 
-- Utilizar React.
-- Utilizar BulmaCSS ou TailwindCSS.
-- Utilizar Javascript ou Typescript.
+- Utilizar RubyOnRails ou NodeJS/React.
 - Ter testes automatizados.
 - README explicando como executar seu projeto.
-- Forkar esse desafio e criar o seu projeto (ou workspace) usando a sua versão desse repositório, tão logo acabe o desafio, submeta um _pull request_. 
+
+## Opcional, mas seria muito bom
+- Utilizar Docker para montar o ambiente.
+- Utilizar BulmaCSS ou TailwindCSS.
 
 ## Critério de avaliação
 
@@ -47,4 +48,4 @@ Quaisquer dúvidas que você venha a ter, consulte as _issues_ para ver se algu�
 Ou se preferir, encaminhe um email para <showmecode@qr.capital>, colocando seu nome e desafio no assunto do email.
 
 ## Referências
-* [CryptoCompare API](https://min-api.cryptocompare.com/)
+* [CryptoCompare API](https://min-api.cryptocompare.com/documentation?key=Price&cat=SingleSymbolPriceEndpoint)
