@@ -48,4 +48,4 @@ Quaisquer dúvidas que você venha a ter, consulte as _issues_ para ver se algu�
 Ou se preferir, encaminhe um email para <showmecode@qr.capital>, colocando seu nome e desafio no assunto do email.
 
 ## Referências
-* [CryptoCompare API](https://min-api.cryptocompare.com/)
+* [CryptoCompare API](https://min-api.cryptocompare.com/documentation?key=Price&cat=SingleSymbolPriceEndpoint)
