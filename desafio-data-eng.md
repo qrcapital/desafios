@@ -24,15 +24,21 @@ Registrar cotação do preço das  do dia 4/11/2022, iniciando às 14h horas:
 
 - ./KRAKEN/14_11_04_22_BTC_USD.csv
 
-
 ## Requisitos
 - Utilizar Apache Kafka ou Apache Flink;
 - Utilizar Docker para montagem do ambiente;
 - Pode escrever em qualquer linguagem, mas damos preferência para Java/Python;
-- Forkar esse desafio e criar o seu projeto (ou workspace) usando a sua versão desse; repositório, tão logo acabe o desafio, submeta um _pull request_; 
 
 ## Opcional, mas seria muito bom
 - Orquestrar a criação dos arquivos usando Apache Airflow;
+
+## Critério de avaliação
+
+-   **Organização do projeto**
+-   **Clareza**: O README explica de forma resumida qual é o problema e como pode rodar a aplicação?
+-   **Assertividade**: A aplicação está fazendo o que é esperado? Se tem algo faltando, o README explica o porquê?
+-   **Legibilidade do código** (incluindo comentários)
+-   **Histórico de commits** (estrutura e qualidade)
 
 ## Dúvidas
 

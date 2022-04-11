@@ -8,7 +8,7 @@ Abaixo você encontrará todos as informações necessárias para iniciar o seu 
 
 - Escolha um dos desafios disponíveis.
 - Siga as instruções do desafio escolhido.
-- Após finalizar, encaminhe um email para <showmecode@qr.capital> indicando qual é tua PR.
+- Após finalizar, encaminhe um email para <showmecode@qr.capital> indicando qual é o seu repositório.
 - Você poderá consultar o Google, Stackoverflow ou algum projeto particular na sua máquina.
 - Fique à vontade para perguntar qualquer dúvida sobre os desafios.
 - Fique tranquilo, respire, assim como você, também já passamos por essa etapa. Boa sorte! :)

@@ -23,6 +23,14 @@ Primeira parte consiste em criar automação em terraform para hospedar Metabase
 - Desenhar o diagrama referêncial dos componentes da AWS
 - Forkar esse desafio e criar o seu projeto (ou workspace) usando a sua versão desse repositório, tão logo acabe o desafio, submeta um _pull request_. 
 
+## Critério de avaliação
+
+-   **Organização do projeto**
+-   **Clareza**: O README explica de forma resumida qual é o problema e como pode rodar a aplicação?
+-   **Assertividade**: A aplicação está fazendo o que é esperado? Se tem algo faltando, o README explica o porquê?
+-   **Legibilidade do código** (incluindo comentários)
+-   **Histórico de commits** (estrutura e qualidade)
+
 ## Dúvidas
 
 Quaisquer dúvidas que você venha a ter, consulte as _issues_ para ver se alguém já não a fez e caso você não ache sua resposta, abra você mesmo uma nova issue!
