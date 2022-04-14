@@ -23,7 +23,7 @@ O desafio consiste em implementar a solução discutida acima utlizando a API da
 
 ## Requisitos
 
-- Utilizar RubyOnRails ou NodeJS/React.
+- Pode utilizar qualquer stack, mas damos preferência para RoR ou NodeJS/React.
 - Ter testes automatizados.
 - README explicando como executar seu projeto.
 
