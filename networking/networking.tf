@@ -12,6 +12,21 @@ resource "aws_internet_gateway" "igw" {
   }
 }
 
+resource "aws_eip" "eip" {
+  vpc = true
+}
+
+resource "aws_nat_gateway" "nat" {
+  allocation_id = aws_eip.eip.id
+  subnet_id     = aws_subnet.subnetPublicA.id
+
+  tags = {
+    Name = "nat"
+  }
+  depends_on = [aws_internet_gateway.igw, aws_subnet.subnetPublicA]
+}
+
+
 resource "aws_route_table" "publicRtb" {
   vpc_id = aws_vpc.vpc.id
 
@@ -28,6 +43,10 @@ resource "aws_route_table" "publicRtb" {
 resource "aws_route_table" "privateRtb" {
   vpc_id = aws_vpc.vpc.id
 
+  route {
+    cidr_block = "0.0.0.0/0"
+    nat_gateway_id = aws_nat_gateway.nat.id
+  }
   tags = {
     Name = "privateRtb"
   }
@@ -92,3 +111,4 @@ resource "aws_route_table_association" "associationPrivateB" {
   subnet_id      = aws_subnet.subnetPrivateB.id
   route_table_id = aws_route_table.privateRtb.id
 }
+

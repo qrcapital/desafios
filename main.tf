@@ -15,6 +15,10 @@ provider "aws" {
 
 #Módulo para criação de VPCs, Subnets etc
 
+module "iam" {
+    source = "./iam"
+}
+
 module "networking" {
   source               = "./networking"
   vpc_cidr             = "10.1.0.0/16"
@@ -40,16 +44,15 @@ module "load_balancer"{
     depends_on = [module.networking, module.security]
 }
 
-# module "ec2" {
-#     source = "./ec2"
-#     subnetPrivateA = module.network.subnetPrivateA
-#     subnetPrivateB = module.network.subnetPrivateB
-#     subnetPublicA  = module.network.subnetPublicA
-#     subnetPublicB  = module.network.subnetPublicB
-#     EC2PrivSecGP = module.security.EC2PrivSecGP 
-#     EC2PubSecGP = module.security.EC2PubSecGP 
-#     depends_on = [module.security]
-# }
+module "ecs" {
+    source = "./ecs"
+    subnetPrivateA = module.networking.subnetPrivateA
+    subnetPrivateB = module.networking.subnetPrivateB
+    tgA = module.load_balancer.tgA
+    serviceSg = module.security.serviceSg
+    ecsRole = module.iam.ecsRole
+    depends_on = [module.load_balancer, module.iam]
+}
 
 # module "db"{
 #     source = "./db"
