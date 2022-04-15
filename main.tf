@@ -51,6 +51,7 @@ module "ecs" {
     tgA = module.load_balancer.tgA
     serviceSg = module.security.serviceSg
     ecsRole = module.iam.ecsRole
+    region = var.region
     depends_on = [module.load_balancer, module.iam]
 }
 

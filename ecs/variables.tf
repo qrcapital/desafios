@@ -16,3 +16,7 @@ variable "serviceSg"{
 variable "ecsRole"{
     type = string
 }
+
+variable "region"{
+    type = string
+}

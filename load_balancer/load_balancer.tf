@@ -8,7 +8,7 @@ resource "aws_lb" "alb" {
 
 resource "aws_lb_target_group" "tgA" {
   name        = "tgA"
-  port        = 3000
+  port        = 80
   protocol    = "HTTP"
   target_type = "ip"
   vpc_id      = var.vpc

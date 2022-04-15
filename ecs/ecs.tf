@@ -11,6 +11,10 @@ resource "aws_ecs_cluster" "ecs_cluster" {
   }
 }
 
+resource "aws_cloudwatch_log_group" "ecsLogs"{
+  name = "/ecs/ecsLogs"
+}
+
 resource "aws_ecs_task_definition" "ecs_task" {
   family = "ecs_service"
   requires_compatibilities = ["FARGATE"]
@@ -32,6 +36,14 @@ resource "aws_ecs_task_definition" "ecs_task" {
           hostPort      = 3000
         }
       ]
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+        "awslogs-group": "/ecs/ecsLogs",
+        "awslogs-region": var.region,
+        "awslogs-stream-prefix": "ecs"
+          }
+      }
     },
   ])
 }
