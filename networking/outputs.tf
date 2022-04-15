@@ -14,7 +14,7 @@ output "subnetPublicB" {
     value = aws_subnet.subnetPublicB.id
 }
 
-output "esantosVPC"{
+output "vpc"{
     value = aws_vpc.vpc.id
 }
 

@@ -25,11 +25,20 @@ module "networking" {
   region               = var.region
 }
 
-# module "security" {
-#     source = "./security"
-#     esantosVPC = module.network.esantosVPC 
-#     depends_on = [module.network]
-# }
+module "security" {
+    source = "./security"
+    vpc = module.networking.vpc 
+    depends_on = [module.networking]
+}
+
+module "load_balancer"{
+    source = "./load_balancer"
+    albSg = module.security.albSg
+    subnetPublicA = module.networking.subnetPublicA
+    subnetPublicB = module.networking.subnetPublicB
+    vpc = module.networking.vpc 
+    depends_on = [module.networking, module.security]
+}
 
 # module "ec2" {
 #     source = "./ec2"
