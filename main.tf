@@ -55,10 +55,10 @@ module "ecs" {
     depends_on = [module.load_balancer, module.iam]
 }
 
-# module "db"{
-#     source = "./db"
-#     DBSecGP = module.security.DBSecGP
-#     subnetPrivateA = module.network.subnetPrivateA
-#     subnetPrivateB = module.network.subnetPrivateB
-#     depends_on = [module.security]
-# }
+module "db"{
+    source = "./db"
+    databaseSg = module.security.databaseSg
+    subnetPrivateA = module.networking.subnetPrivateA
+    subnetPrivateB = module.networking.subnetPrivateB
+    depends_on = [module.security]
+}
