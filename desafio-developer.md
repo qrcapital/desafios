@@ -17,6 +17,8 @@ Criar uma área logada com dashboard de pesquisa de criptomoedas, onde é possí
 * **Preço:** Exibe o preço da moeda.
 * **Sinalização:** Exibe a variação (em %) do preço da moeda nas últimas 24h. Caso tenha aumentado, a variação precisa estar com a cor verde, do contrário, vermelha.
 
+Por último, o dashboard deve atualizar o preço a cada 5s. 
+
 ## Desafio
 
 O desafio consiste em implementar a solução discutida acima utlizando a API da CyptoCompare.
