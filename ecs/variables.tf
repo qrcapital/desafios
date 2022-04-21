@@ -1,3 +1,4 @@
+#importando variaveis
 variable "subnetPrivateA" {
     type = string
 }

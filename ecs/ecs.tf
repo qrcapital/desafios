@@ -1,8 +1,3 @@
-# resource "aws_ecr_repository" "ecr_repo" {
-#   name = "metabase/metabase"
-# }
-
-
 resource "aws_ecs_cluster" "ecs_cluster" {
   name = "ecs_cluster"
 
@@ -22,12 +17,11 @@ resource "aws_ecs_task_definition" "ecs_task" {
   cpu                      = 1024
   memory                   = 2048
   network_mode             = "awsvpc"
-  #task_role_arn            = var.dbRole
   execution_role_arn       = var.ecsRole
   container_definitions = jsonencode([
     {
       name      = "ecs_container"
-      image     = "413261057581.dkr.ecr.us-east-1.amazonaws.com/teste" #change
+      image     = "metabase/metabase" #change
       cpu       = 1024
       memory    = 2048
       essential = true

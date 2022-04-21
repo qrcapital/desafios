@@ -1,3 +1,4 @@
+#exportando variaveis
 output "subnetPrivateA" {
     value = aws_subnet.subnetPrivateA.id
 }
