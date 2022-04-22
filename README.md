@@ -11,3 +11,6 @@ Para executar o código IaaS basta executar:
 - terraform init
 - terraform apply
 - Digitar "yes" quando for solicitado
+
+Arquitetura:
+![alt text](https://github.com/eudesgsantos/desafios/blob/main/architecture.png?raw=true)
